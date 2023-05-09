@@ -22,4 +22,3 @@ def pytest_html_report_title(report):
 
 def pytest_html_results_table_row(report, cells):
     print(report)
-
