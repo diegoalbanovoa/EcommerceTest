@@ -3,11 +3,6 @@ import unittest
 import sys
 import os
 
-# Agregar el directorio 'backend' al sys.path de Python
-
-backend_dir = os.path.abspath('ecommerce/Test')
-relative_path = os.path.relpath(backend_dir, os.path.abspath(os.path.dirname(__file__) or '.'))
-sys.path.append(relative_path)
 
 from online_store import app
 
