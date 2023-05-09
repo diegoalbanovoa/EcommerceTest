@@ -253,7 +253,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>Informe de pruebas de la aplicacion Ecommerce</h1>
-    <p>Report generated on 09-May-2023 at 06:40:29 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 09-May-2023 at 07:28:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -278,41 +278,32 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Tester</td>
         <td>Diego-Novoa-Jairo-Perez</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 0.62 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 0.44 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
         <tr>
           <th class="sortable result initial-sort" col="result">Result</th>
-          <th class="sortable" col="name">Test</th>&lt;function html_report_title at 0x000001E170C22FC0&gt;
+          <th class="sortable" col="name">Test</th>&lt;function html_report_title at 0x0000028B52376F20&gt;
           <th class="sortable" col="duration">Duration</th>
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="5">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_user_login_missing_credentials.py::TestUserLogin::test_missing_credentials</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_user_login_missing_credentials.TestUserLogin testMethod=test_missing_credentials&gt;<br/><br/>    def test_missing_credentials(self):<br/>        data = {<br/>            &quot;username&quot;: &quot;&quot;,<br/>            &quot;password&quot;: &quot;&quot;<br/>        }<br/>        response = self.app.post(&#x27;/login&#x27;, data=json.dumps(data), content_type=&#x27;application/json&#x27;)<br/>        self.assertEqual(response.status_code, 400)<br/>&gt;       self.assertEqual(response.json[&#x27;message&#x27;], &#x27;Please provide both username and password.&#x27;)<br/><span class="error">E       AssertionError: &#x27;Both username and password are required.&#x27; != &#x27;Please provide both username and password.&#x27;</span><br/><span class="error">E       - Both username and password are required.</span><br/><span class="error">E       + Please provide both username and password.</span><br/><br/>test_user_login_missing_credentials.py:22: AssertionError<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_user_login_valid_credentials.py::TestUserLogin::test_valid_credentials</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_user_login_valid_credentials.TestUserLogin testMethod=test_valid_credentials&gt;<br/><br/>    def test_valid_credentials(self):<br/>        # Registrar un usuario antes de la prueba.<br/>        data = {<br/>            &quot;username&quot;: &quot;johndoe&quot;,<br/>            &quot;password&quot;: &quot;password1234&quot;,<br/>            &quot;confirm_password&quot;: &quot;password1234&quot;,<br/>            &quot;email&quot;: &quot;johndoe@example.com&quot;,<br/>            &quot;full_name&quot;: &quot;John Doe&quot;,<br/>            &quot;birthdate&quot;: &quot;1990-01-01&quot;,<br/>            &quot;gender&quot;: &quot;Male&quot;,<br/>            &quot;country&quot;: &quot;USA&quot;<br/>        }<br/>        self.app.post(&#x27;/register&#x27;, data=json.dumps(data), content_type=&#x27;application/json&#x27;)<br/>    <br/>        # Iniciar sesión con las credenciales registradas.<br/>        data = {<br/>            &quot;username&quot;: &quot;johndoe&quot;,<br/>            &quot;password&quot;: &quot;password1234&quot;<br/>        }<br/>        response = self.app.post(&#x27;/login&#x27;, data=json.dumps(data), content_type=&#x27;application/json&#x27;)<br/>&gt;       self.assertEqual(response.status_code, 200)<br/><span class="error">E       AssertionError: 401 != 200</span><br/><br/>test_user_login_valid_credentials.py:40: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_registration.py::RegisterTestCase::test_successful_registration</td>
+          <td class="col-name">Test/Pruebas Unitarias/test_registration.py::RegisterTestCase::test_successful_registration</td>
           <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Test/Pruebas Unitarias/test_user_login_missing.py::TestUserLogin::test_missing_credentials</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
