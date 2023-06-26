@@ -19,11 +19,11 @@ EcommerceTest aims to conduct comprehensive and thorough tests on an e-commerce 
 
 To use EcommerceTest in your local environment, follow these steps:
 
-```bash
+```
 $ git clone https://github.com/your-username/EcommerceTest.git
 $ cd EcommerceTest
 $ npm install
-´´´´
+```
 
 This will clone the repository to your local machine and allow you to install the necessary dependencies.
 
@@ -39,9 +39,9 @@ Before running the tests, make sure to properly configure the `config.js` file l
 
 To execute the automated tests, use the following command:
 
-```bash
+```
 $ npm test
-´´´´´´
+```
 
 This will initiate the execution of all tests defined in the project and display the results in the console. Additionally, a detailed report with the test results will be generated.
 
